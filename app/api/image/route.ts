@@ -117,10 +117,10 @@ export async function GET(req: Request) {
 
     const res = await fetchWithTimeout(u.toString(), {
       method: "GET",
-      headers: {
-        "User-Agent": "IPTVChecker/1.0",
-        Accept: "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
-      },
+headers: {
+  "User-Agent": "TiviMate/4.7.0 (Linux; Android 11; Shield TV Build/RQ1A.210105.003)",
+  Accept: "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+},
       timeoutMs: 20000,
     });
 
