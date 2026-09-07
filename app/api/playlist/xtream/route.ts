@@ -143,7 +143,7 @@ export async function POST(req: Request) {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
-        "User-Agent": "IPTVChecker/1.0",
+        "User-Agent": "TiviMate/4.7.0 (Linux; Android 11; Shield TV Build/RQ1A.210105.003)",
       },
       body: categoriesForm.toString(),
       timeoutMs: 20000,
@@ -191,7 +191,7 @@ export async function POST(req: Request) {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
-          "User-Agent": "IPTVChecker/1.0",
+          "User-Agent": "TiviMate/4.7.0 (Linux; Android 11; Shield TV Build/RQ1A.210105.003)",
         },
         body: streamsForm.toString(),
         timeoutMs: 25000,
