@@ -4,8 +4,8 @@ export type InMemoryRateLimiter = {
 
 export const RATE_WINDOW_MS = 60_000;
 
-export const RATE_MAX_CHECK_PER_WINDOW = 30;
-export const RATE_MAX_PLAYLIST_PER_WINDOW = 20;
+export const RATE_MAX_CHECK_PER_WINDOW = 100;
+export const RATE_MAX_PLAYLIST_PER_WINDOW = 60;
 
 export function createInMemoryRateLimiter(windowMs: number, max: number, maxEntries = 10_000): InMemoryRateLimiter {
   const state = new Map<string, { resetAt: number; count: number }>();
